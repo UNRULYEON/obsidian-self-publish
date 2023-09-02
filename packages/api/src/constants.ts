@@ -1,0 +1,5 @@
+export enum NOTE_STATUS {
+  UNPUBLISHED,
+  PROCESSING,
+  PUBLISHED,
+}

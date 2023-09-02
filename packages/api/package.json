@@ -1,0 +1,30 @@
+{
+  "name": "@obsidian-self-publish/api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./build/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "generate:sqlite": "pnpm drizzle-kit generate:sqlite",
+    "push:sqlite": "pnpm drizzle-kit push:sqlite",
+    "drizzle:studio": "pnpm drizzle-kit studio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "better-sqlite3": "^8.5.2",
+    "drizzle-orm": "^0.28.5",
+    "express": "^4.18.2",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.4",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.8",
+    "drizzle-kit": "^0.19.13",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}

@@ -6,6 +6,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "generate:sqlite": "turbo run generate:sqlite",
+    "push:sqlite": "turbo run push:sqlite",
+    "drizzle:studio": "turbo run drizzle:studio",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
